@@ -1,0 +1,12 @@
+{
+    "version": "1.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug(attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 8000
+        }
+    ]
+}

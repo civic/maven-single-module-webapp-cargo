@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cargo-run",
+            "type": "shell",
+            "command": "mvn war:war cargo:run",
+            "group": "build",
+            "isBackground": true,
+            "options": {
+                "env": {
+                    "MY_VAR": "abc123"
+                }
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "showReuseMessage": false,
+            }
+        },
+        {
+            "label": "cargo-redeploy",
+            "type": "shell",
+            "command": "mvn war:war cargo:redeploy",
+            "group": "build",
+            "isBackground": true,
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "showReuseMessage": false,
+            }
+        }
+    ]
+
+}
